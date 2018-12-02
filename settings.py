@@ -1,9 +1,10 @@
 import  numpy as np
 from helpers import FuncWithGradient
 
-F1=FuncWithGradient(lambda x: np.sin(x) + x ** 3, lambda x: np.cos(x) + 3 * x ** 2)
-G1 = FuncWithGradient(lambda x: x ** 2 - 3, lambda x: 2 * x)
-G2 = FuncWithGradient(lambda x: x - 4, lambda x: 1)
+F=FuncWithGradient(lambda x: 8 * np.sin(x) + x**2 - x**3, lambda x: (2 - 3 * x) * x + 8 * np.cos(x))
+G1 = FuncWithGradient(lambda x: x**2 - 4, lambda x: 2 * x)
 
-r0 = 0.3
+restriction_funcitons = [G1]
+start_point = 1.4
+r0 = 3
 C = 2
