@@ -9,4 +9,4 @@ tests.py - тесты
 ```
 
 ### Запуск тестов
-python3 -m pytest tests.py
+python3.6 -m pytest tests.py
